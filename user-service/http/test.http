@@ -1,0 +1,14 @@
+###
+GET http://localhost:8881/user/test/login
+
+### Send POST request with json body
+POST http://localhost:8881/user/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+### Send POST request with json body
+GET http://localhost:8881/user/verification/send?mail=1243854097@qq.com

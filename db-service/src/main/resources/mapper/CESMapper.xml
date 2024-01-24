@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cetasas.db.mapper.CESMapper">
+    <insert id="insert">
+        INSERT INTO `${tableName}`(`r_code`, `value`)
+        VALUES(#{ces.rCode}, #{ces.value});
+    </insert>
+
+    <resultMap id="GetAllProvinceMap" type="cn.cetasas.db.pojo.CES">
+        <id column="r_code" jdbcType="CHAR" property="rCode" />
+    </resultMap>
+
+    <select id="getAllProvince" resultMap="GetAllProvinceMap">
+        SELECT ces.`r_code`, `r_name` AS `reg`, `value`
+        FROM `${tableName}` AS `ces`, `r_code`
+        WHERE `ces`.`r_code` = `r_code`.`r_code`;
+    </select>
+</mapper>

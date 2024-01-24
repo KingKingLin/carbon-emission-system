@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cetasas.message.mapper.MessageMapper">
+  <insert id="publish">
+    INSERT INTO `message`(`id`, `title`, `content`)
+    VALUES (#{id}, #{title}, #{content});
+  </insert>
+
+  <select id="list" resultType="cn.cetasas.message.resp.MessageWithoutContentResponse">
+    SELECT `id`, `title`, `createtime`, `modifytime`
+    FROM `message`
+    WHERE `deleted` = FALSE;
+  </select>
+
+  <select id="selectByPrimaryKey" resultType="cn.cetasas.message.resp.MessageResponse">
+    SELECT `id`, `title`, `content`, `createtime`, `modifytime`
+    FROM `message`
+    WHERE `deleted` = FALSE and
+          `id` = #{id};
+  </select>
+
+  <update id="revise">
+    UPDATE `message`
+    SET `title` = #{title},
+        `content` = #{content},
+        `modifytime` = #{modifytime}
+    WHERE `id` = #{id};
+  </update>
+
+  <update id="delete">
+    UPDATE `message`
+    SET `deleted` = TRUE
+    WHERE `id` = #{id};
+  </update>
+
+  <select id="getNotReadCount" resultType="java.lang.Integer">
+    SELECT COUNT(*) - (SELECT COUNT(*)
+                       FROM `message`, `record`
+                       WHERE `message`.`id` = `record`.`id` AND
+                             `message`.`deleted` = FALSE AND
+                             `record`.`userid` = #{userid})
+    FROM `message`
+    WHERE `message`.`deleted` = FALSE;
+  </select>
+
+  <select id="listByUser" resultType="java.lang.Long">
+      -- 用户表阅读表
+      SELECT `message`.`id` AS `id`
+      FROM `record`, `message`
+      WHERE `record`.`id` = `message`.`id` AND
+            `record`.`userid` = #{userid} AND
+            `message`.`deleted` = FALSE;
+  </select>
+
+  <select id="limitList" resultType="cn.cetasas.message.resp.MessageWithoutContentResponse">
+      SELECT `id`, `title`, `createtime`, `modifytime`
+      FROM `message`
+      WHERE `deleted` = FALSE
+      ORDER BY `id` DESC
+      LIMIT 0, ${num};
+  </select>
+</mapper>

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: userservice # 服务名称
+  profiles:
+    active: dev #开发环境，这里是dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos 地址 => nginx 代理的地址
+      config:
+        file-extension: yaml # 文件后缀名

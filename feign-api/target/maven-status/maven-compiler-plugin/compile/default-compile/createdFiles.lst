@@ -1,0 +1,4 @@
+cn\cetasas\feign\clients\DBClient.class
+cn\cetasas\feign\pojo\CESResp.class
+cn\cetasas\feign\config\DefaultFeignConfiguration.class
+cn\cetasas\feign\pojo\CommonResp.class

@@ -1,0 +1,39 @@
+###
+GET http://localhost:8880/db/test/data/ces?reg=110000
+Accept: application/json
+
+###
+GET http://localhost:8880/db/test/data/total
+Accept: application/json
+
+###
+GET http://localhost:8880/db/test/data/ces/init
+Accept: application/json
+
+###
+GET http://localhost:8880/db/test
+Accept: application/json
+
+###
+GET http://localhost:8880/db/test/db/table/ces/2019
+Accept: application/json
+
+### Send POST request with json body
+#POST http://localhost:8880/db/test/db/table
+#Content-Type: application/json
+#
+#{
+#  "year": "2019"
+#}
+
+### 模仿form表单POST请求
+POST http://localhost:8880/db/test/db/table/ces
+Content-Type: application/x-www-form-urlencoded
+
+year=2019
+
+### 模仿form表单POST请求
+POST http://localhost:8880/db/test/db/pojo/ces/2019
+Content-Type: application/x-www-form-urlencoded
+
+rCode=110000&value=15.98

@@ -1,0 +1,24 @@
+gateway_domain: http://cetasas.natapp1.cc
+server:
+  port: 8883 # 端口号
+spring:
+  datasource: # 配置数据库
+    url: jdbc:mysql://localhost:3306/bysj_message?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: bysj
+    password: bysj
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #  redis: # 配置redis => 我没有设置密码（有密码的话需要打开这行注释）
+  #    password: 1234
+  thymeleaf:
+    cache: false
+  servlet:
+    multipart:
+      max-file-size: 50MB    # 最大支持文件大小
+      max-request-size: 50MB # 最大支持请求大小
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+logging:
+  level:
+    cn.cetasas.message.mapper: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS

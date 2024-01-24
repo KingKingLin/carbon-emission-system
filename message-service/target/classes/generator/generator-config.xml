@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3"  defaultModelType="flat">
+
+        <!-- 自动检查关键字，为关键字增加反引号 -->
+        <property name="autoDelimitKeywords" value="true"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!-- 覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <!-- 生成的实体类添加toString()方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+        <!-- 不生成注释 -->
+        <commentGenerator>
+            <!-- <property name="suppressDate" value="true" />-->
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <!-- 数据库链接配置 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/bysj_message"
+                        userId="bysj" password="bysj">
+        </jdbcConnection>
+
+        <!-- domain类的位置 -->
+        <javaModelGenerator targetPackage="cn.cetasas.message.pojo"
+                            targetProject="src\main\java"/>
+
+        <!-- mapper xml 的位置 -->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="src\main\resources"/>
+
+        <!-- mapper 类的位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="cn.cetasas.message.mapper"
+                             targetProject="src\main\java"/>
+
+        <!-- 需要生成对应pojo、mapper等实体类对应的表 -->
+         <table tableName="m_image"/>
+        <!-- <table tableName="message"/>-->
+        <!-- <table tableName="record"/>-->
+        <!--<table tableName="user"/>-->
+    </context>
+</generatorConfiguration>

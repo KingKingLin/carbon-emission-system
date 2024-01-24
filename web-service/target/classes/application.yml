@@ -1,0 +1,14 @@
+server:
+  port: 8882 # 端口号
+spring:
+  application:
+    name: webservice # 服务名称
+  profiles:
+    active: dev # 开发环境，这里是dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos 地址
+  thymeleaf:
+    cache: false
+#  resources: # 设置 css fonts img js 的静态路径
+#    static-locations: classpath:css/,classpath:fonts/,classpath:img/,classpath:js/

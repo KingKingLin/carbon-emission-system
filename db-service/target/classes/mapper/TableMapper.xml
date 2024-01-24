@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cetasas.db.mapper.TableMapper">
+    <select id="isInit" resultType="java.lang.Boolean">
+        SELECT isInit FROM `init`
+        WHERE `table_name` = #{tableName};
+    </select>
+
+    <update id="updateInit" parameterType="java.lang.String">
+        UPDATE `init`
+        SET `isInit` = 1 -- 1 代表 true; 0 代表 false
+        WHERE `table_name` = #{tableName};
+    </update>
+
+    <select id="isExitTable" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM information_schema.TABLES
+        WHERE TABLE_SCHEMA = #{dbName} AND
+              TABLE_NAME = #{tableName};
+    </select>
+
+    <update id="createEESTable" parameterType="java.lang.String" >
+        CREATE TABLE IF NOT EXISTS `${tableName}` (
+          `r_code` CHAR(6) NOT NULL COMMENT '省份代码',
+          `e_code` CHAR(7) NOT NULL COMMENT '能源代码',
+          `value` DOUBLE DEFAULT 0 COMMENT '数据',
+          FOREIGN KEY (`r_code`) REFERENCES `r_code`(`r_code`),
+          FOREIGN KEY (`e_code`) REFERENCES `e_code`(`e_code`),
+          PRIMARY KEY (`r_code`, `e_code`)
+        ) ENGINE = Innodb
+          DEFAULT
+          CHARSET = utf8mb4 COMMENT = #{tableName};
+    </update>
+
+    <update id="createCESTable" parameterType="java.lang.String" >
+        CREATE TABLE IF NOT EXISTS `${tableName}` (
+          `r_code` CHAR(6) NOT NULL COMMENT '省份代码',
+          `value` DOUBLE DEFAULT 0 COMMENT '数据',
+          FOREIGN KEY (`r_code`) REFERENCES `r_code`(`r_code`),
+          PRIMARY KEY (`r_code`)
+        ) ENGINE = Innodb
+          DEFAULT
+          CHARSET = utf8mb4 COMMENT = #{tableName};
+    </update>
+
+    <update id="createTotalTable" parameterType="java.lang.String" >
+        CREATE TABLE IF NOT EXISTS `${tableName}` (
+          `e_code` CHAR(7) NOT NULL COMMENT '能源代码',
+          `value` DOUBLE DEFAULT 0 COMMENT '数据',
+          FOREIGN KEY (`e_code`) REFERENCES `e_code`(`e_code`),
+          PRIMARY KEY (`e_code`)
+        ) ENGINE = Innodb
+          DEFAULT
+          CHARSET = utf8mb4 COMMENT = #{tableName};
+    </update>
+    <!-- 作用：变量之间驼峰命名法的映射-->
+<!--    <resultMap id="ExperimentResultMap" type="cn.cestasas.user.XXX">-->
+<!--        <id column="e_id" jdbcType="BIGINT" property="eId" />-->
+<!--    </resultMap>-->
+</mapper>

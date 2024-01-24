@@ -1,0 +1,136 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="196" name="Java" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="scoped" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="65">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="el-container" />
+            <item index="7" class="java.lang.String" itemvalue="el-header" />
+            <item index="8" class="java.lang.String" itemvalue="el-main" />
+            <item index="9" class="java.lang.String" itemvalue="basemap" />
+            <item index="10" class="java.lang.String" itemvalue="el-footer" />
+            <item index="11" class="java.lang.String" itemvalue="cartoonmap" />
+            <item index="12" class="java.lang.String" itemvalue="baseheader" />
+            <item index="13" class="java.lang.String" itemvalue="el-menu" />
+            <item index="14" class="java.lang.String" itemvalue="el-menu-item" />
+            <item index="15" class="java.lang.String" itemvalue="el-submenu" />
+            <item index="16" class="java.lang.String" itemvalue="el-aside" />
+            <item index="17" class="java.lang.String" itemvalue="router-view" />
+            <item index="18" class="java.lang.String" itemvalue="basefooter" />
+            <item index="19" class="java.lang.String" itemvalue="router-link" />
+            <item index="20" class="java.lang.String" itemvalue="mapchart" />
+            <item index="21" class="java.lang.String" itemvalue="combochart" />
+            <item index="22" class="java.lang.String" itemvalue="el-switch" />
+            <item index="23" class="java.lang.String" itemvalue="piechart" />
+            <item index="24" class="java.lang.String" itemvalue="columnchart" />
+            <item index="25" class="java.lang.String" itemvalue="el-input" />
+            <item index="26" class="java.lang.String" itemvalue="el-button" />
+            <item index="27" class="java.lang.String" itemvalue="el-breadcrumb" />
+            <item index="28" class="java.lang.String" itemvalue="el-breadcrumb-item" />
+            <item index="29" class="java.lang.String" itemvalue="el-carousel" />
+            <item index="30" class="java.lang.String" itemvalue="el-carousel-item" />
+            <item index="31" class="java.lang.String" itemvalue="el-image" />
+            <item index="32" class="java.lang.String" itemvalue="el-divider" />
+            <item index="33" class="java.lang.String" itemvalue="el-card" />
+            <item index="34" class="java.lang.String" itemvalue="ces-map" />
+            <item index="35" class="java.lang.String" itemvalue="other-map" />
+            <item index="36" class="java.lang.String" itemvalue="ces-pie-map" />
+            <item index="37" class="java.lang.String" itemvalue="ces-map-chart" />
+            <item index="38" class="java.lang.String" itemvalue="ces-column-chart" />
+            <item index="39" class="java.lang.String" itemvalue="other-pie-chart" />
+            <item index="40" class="java.lang.String" itemvalue="other-column-chart" />
+            <item index="41" class="java.lang.String" itemvalue="ces-pie-chart" />
+            <item index="42" class="java.lang.String" itemvalue="ces-combo-chart" />
+            <item index="43" class="java.lang.String" itemvalue="el-select" />
+            <item index="44" class="java.lang.String" itemvalue="el-option-group" />
+            <item index="45" class="java.lang.String" itemvalue="el-option" />
+            <item index="46" class="java.lang.String" itemvalue="el-form-item" />
+            <item index="47" class="java.lang.String" itemvalue="el-form" />
+            <item index="48" class="java.lang.String" itemvalue="el-steps" />
+            <item index="49" class="java.lang.String" itemvalue="el-step" />
+            <item index="50" class="java.lang.String" itemvalue="el-descriptions" />
+            <item index="51" class="java.lang.String" itemvalue="el-descriptions-item" />
+            <item index="52" class="java.lang.String" itemvalue="el-popover" />
+            <item index="53" class="java.lang.String" itemvalue="el-popconfirm" />
+            <item index="54" class="java.lang.String" itemvalue="el-tag" />
+            <item index="55" class="java.lang.String" itemvalue="el-radio-group" />
+            <item index="56" class="java.lang.String" itemvalue="el-radio" />
+            <item index="57" class="java.lang.String" itemvalue="el-badge" />
+            <item index="58" class="java.lang.String" itemvalue="el-empty" />
+            <item index="59" class="java.lang.String" itemvalue="message-aside" />
+            <item index="60" class="java.lang.String" itemvalue="message-header" />
+            <item index="61" class="java.lang.String" itemvalue="el-drawer" />
+            <item index="62" class="java.lang.String" itemvalue="el-table-column" />
+            <item index="63" class="java.lang.String" itemvalue="el-table" />
+            <item index="64" class="java.lang.String" itemvalue="el-menu-item-group" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HttpUrlsUsage" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredUrls">
+        <list>
+          <option value="http://localhost" />
+          <option value="http://127.0.0.1" />
+          <option value="http://0.0.0.0" />
+          <option value="http://www.w3.org/" />
+          <option value="http://json-schema.org/draft" />
+          <option value="http://java.sun.com/" />
+          <option value="http://xmlns.jcp.org/" />
+          <option value="http://javafx.com/javafx/" />
+          <option value="http://javafx.com/fxml" />
+          <option value="http://maven.apache.org/xsd/" />
+          <option value="http://maven.apache.org/POM/" />
+          <option value="http://www.springframework.org/schema/" />
+          <option value="http://www.springframework.org/tags" />
+          <option value="http://www.springframework.org/security/tags" />
+          <option value="http://www.thymeleaf.org" />
+          <option value="http://www.jboss.org/j2ee/schema/" />
+          <option value="http://www.jboss.com/xml/ns/" />
+          <option value="http://www.ibm.com/webservices/xsd" />
+          <option value="http://activemq.apache.org/schema/" />
+          <option value="http://schema.cloudfoundry.org/spring/" />
+          <option value="http://schemas.xmlsoap.org/" />
+          <option value="http://cxf.apache.org/schemas/" />
+          <option value="http://primefaces.org/ui" />
+          <option value="http://tiles.apache.org/" />
+          <option value="http://" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="customHeaders">
+        <set>
+          <option value="Access-Control-Expose-Headers" />
+          <option value="VERIFY_CODE_KEY" />
+          <option value="VERIFY_KEY" />
+          <option value="VERIFY_CODE" />
+        </set>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="MybatisMapperXmlInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+  </profile>
+</component>

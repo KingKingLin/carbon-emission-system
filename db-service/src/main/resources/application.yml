@@ -1,0 +1,20 @@
+dbName: bysj_db # mysql的数据库名 自定义
+server:
+  port: 8880 # 端口号
+spring:
+  datasource: # 配置数据库
+    url: jdbc:mysql://localhost:3306/${dbName}?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: bysj
+    password: bysj
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#  mvc: # 映射resource.static下文件，使之可以通过url地址直接访问
+#    static-path-pattern: /**
+#  redis: # 配置redis => 我没有设置密码（有密码的话需要打开这行注释）
+#    host: redis
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+logging:
+  level:
+    cn.cetasas.db.mapper: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS

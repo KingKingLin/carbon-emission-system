@@ -1,0 +1,8 @@
+###
+GET http://localhost:10010/user/test/login
+
+###
+GET http://localhost:10010/db/ces/2018
+
+###
+GET http://localhost:10010/db/ees/init/2019

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cetasas.db.mapper.EESMapper">
+    <insert id="insert">
+        INSERT INTO `${tableName}` (`r_code`, `e_code`, `value`)
+        VALUES (#{ees.rCode}, #{ees.eCode}, #{ees.value});
+    </insert>
+
+    <resultMap id="GetAllProvinceMap" type="cn.cetasas.db.pojo.EES">
+        <id column="r_code" jdbcType="CHAR" property="rCode" />
+        <id column="e_code" jdbcType="CHAR" property="eCode" />
+    </resultMap>
+
+    <select id="getAllProvince" resultMap="GetAllProvinceMap">
+        SELECT `ees`.`r_code` AS `r_code`, `ees`.`e_code` AS `e_code`, `r_name` AS `reg`, `e_name` AS `zb`, `value`, `cef`
+        FROM `${tableName}` AS `ees`, `e_code`, `r_code`, `cef`
+        WHERE `ees`.`r_code` = `r_code`.`r_code` AND
+              `ees`.`e_code` = `e_code`.`e_code` AND
+              `ees`.`e_code` = `cef`.`e_code`;
+    </select>
+
+    <select id="getDataByRegAndYear" resultType="cn.cetasas.db.resp.ZBResp">
+        SELECT `e_name` AS `zb`, `value`
+        FROM `${tableName}` AS `ees`, `e_code`
+        WHERE `ees`.`r_code` = #{reg} AND
+              `ees`.`e_code` = `e_code`.`e_code`;
+    </select>
+</mapper>

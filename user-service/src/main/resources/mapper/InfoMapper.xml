@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cetasas.user.mapper.InfoMapper">
+  <select id="getInfoByUserId" resultType="cn.cetasas.user.pojo.Info">
+    SELECT * FROM `info` WHERE `userid` = #{userid};
+  </select>
+
+  <insert id="createInfo">
+    INSERT INTO `info`(`id`, `userid`)
+    VALUES(#{id}, #{userid})
+  </insert>
+
+  <update id="update">
+    UPDATE `info`
+    SET `sex` = #{sex},
+        `city` = #{city},
+        `info` = #{info},
+        `address` = #{address}
+    WHERE `id` = #{id}
+  </update>
+</mapper>
