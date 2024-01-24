@@ -40,7 +40,7 @@
 1PJ = 1000TJ（1 拍焦耳 it's 1000 太焦耳）
 ```
 
-![image-20230403224814614](img\image-20230403224814614.png)
+![image-20230403224814614](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230403224814614.png)
 
 ```
 以“原煤”为例：
@@ -614,7 +614,7 @@ public class CarbonEmissionStatisticsTest {
 
 #### 3. 测试结果示意图
 
-![image-20230318214930773](img\image-20230318214930773.png)
+![image-20230318214930773](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230318214930773.png)
 
 ### 2）在JVM运行Python脚本
 
@@ -817,25 +817,25 @@ public class PythonRunnerTest {
 
 （1）给系统环境Path添加如下配置
 
-![image-20230319222347819](img\image-20230319222347819.png)
+![image-20230319222347819](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230319222347819.png)
 
 （2）并将python的运行路径修改成python
 
-![image-20230319222552851](img\image-20230319222552851.png)
+![image-20230319222552851](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230319222552851.png)
 
 （3）运行结果
 
-![image-20230319223808265](img\image-20230319223808265.png)
+![image-20230319223808265](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230319223808265.png)
 
 **或者**
 
 （1）在idea中的"Edit Configurations"
 
-![image-20230319225218687](img\image-20230319225218687.png)
+![image-20230319225218687](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230319225218687.png)
 
 （2）添加如下环境，一样将python的运行路径改为"python"
 
-![image-20230319225324508](img\image-20230319225324508.png)
+![image-20230319225324508](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230319225324508.png)
 
 #### 4、将BufferedReader流转换成字符串的三种方式
 
@@ -882,19 +882,19 @@ while ((line = in.readLine()) != null) {
 
 ##### II. Java代码
 
-![image-20230320004603951](img\image-20230320004603951.png)
+![image-20230320004603951](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230320004603951.png)
 
-![image-20230320005028685](img\image-20230320005028685.png)
+![image-20230320005028685](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230320005028685.png)
 
 ### 3） 数据库设计
 
 #### 1. 方案一：三大范式 3NF
 
-![image-20230403222554683](img\image-20230403222554683.png)
+![image-20230403222554683](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230403222554683.png)
 
 #### 2. 方案二：分表
 
-![image-20230403222814032](img\image-20230403222814032.png)
+![image-20230403222814032](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230403222814032.png)
 
 #### 3.  两种方案的优缺点
 
@@ -916,9 +916,9 @@ while ((line = in.readLine()) != null) {
 
 #### 1.  配置 mybatis-generator
 
-![image-20230326220852831](img\image-20230326220852831.png)
+![image-20230326220852831](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230326220852831.png)
 
-![image-20230326220940893](img\image-20230326220940893.png)
+![image-20230326220940893](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230326220940893.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1669,21 +1669,21 @@ private List<CES> calc(List<EES> datas) {
 
 ### 2）时空分析图
 
-![image-20230421004400100](img\image-20230421004400100.png)
+![image-20230421004400100](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230421004400100.png)
 
-![image-20230421004414903](img\image-20230421004414903.png)
+![image-20230421004414903](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230421004414903.png)
 
-![image-20230421004441518](img\image-20230421004441518.png)
+![image-20230421004441518](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230421004441518.png)
 
-![image-20230421004455768](img\image-20230421004455768.png)
+![image-20230421004455768](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230421004455768.png)
 
 ### 3）数据下载
 
 > 只有登录后的账户才有权利下载数据
 
-![image-20230421004528361](img\image-20230421004528361.png)
+![image-20230421004528361](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230421004528361.png)
 
-![image-20230421004546046](img\image-20230421004546046.png)
+![image-20230421004546046](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230421004546046.png)
 
 ### 4）消息中心
 
@@ -1719,19 +1719,19 @@ npm ls
 
 `vue create web`
 
-![image-20211109180059575](img\image-20211109180059575.png)
+![image-20211109180059575](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20211109180059575.png)
 
-![image-20211109180125755](img\image-20211109180125755.png)
+![image-20211109180125755](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20211109180125755.png)
 
-![image-20211109180705261](img\image-20211109180705261.png)
+![image-20211109180705261](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20211109180705261.png)
 
 #### 3. vue 项目启动
 
 > package.json 是 vue 项目的启动文件
 
-![image-20211109183509934](img\image-20211109183509934.png)
+![image-20211109183509934](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20211109183509934.png)
 
-![image-20211109183520696](img\image-20211109183520696.png)
+![image-20211109183520696](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20211109183520696.png)
 
 #### 4. router 里的懒加载
 
@@ -1739,11 +1739,11 @@ npm ls
 >
 > 可以使用懒加载，减少前端DOM的压力
 
-![image-20211109184218804](img\image-20211109184218804.png)
+![image-20211109184218804](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20211109184218804.png)
 
 #### 5. vue 项目结构
 
-![image-20211109184844084](img\image-20211109184844084.png)
+![image-20211109184844084](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20211109184844084.png)
 
 ### 2）地图页面初步实现
 
@@ -1957,7 +1957,7 @@ myChart.hideLoading();
 
 ##### II 测试示意图 USA
 
-![image-20230418020122252](img\image-20230418020122252.png)
+![image-20230418020122252](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230418020122252.png)
 
 ##### III 中国的省际 geo 数据
 
@@ -2128,7 +2128,7 @@ myChart.hideLoading();
 
 ##### V 中国省际测试示意图
 
-![image-20230418025645019](img\image-20230418025645019.png)
+![image-20230418025645019](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230418025645019.png)
 
 ### 3）引入 axios
 
@@ -2926,11 +2926,11 @@ GitHub的Release下载页：https://github.com/alibaba/nacos/releases
 
 如图：
 
-![image-20210402161102887](img\image-20210402161102887.png)
+![image-20210402161102887](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402161102887.png)
 
 本课程采用1.4.1.版本的Nacos，课前资料已经准备了安装包：
 
-![image-20210402161130261](img\image-20210402161130261.png)
+![image-20210402161130261](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402161130261.png)
 
 windows版本使用`nacos-server-1.4.1.zip`包即可。
 
@@ -2938,7 +2938,7 @@ windows版本使用`nacos-server-1.4.1.zip`包即可。
 
 将这个包解压到任意非中文目录下，如图：
 
-![image-20210402161843337](img\image-20210402161843337.png)
+![image-20210402161843337](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402161843337.png)
 
 目录说明：
 
@@ -2951,17 +2951,17 @@ Nacos的默认端口是8848，如果你电脑上的其它进程占用了8848端�
 
 **如果无法关闭占用8848端口的进程**，也可以进入nacos的conf目录，修改配置文件中的端口：
 
-![image-20210402162008280](img\image-20210402162008280.png)
+![image-20210402162008280](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402162008280.png)
 
 修改其中的内容：
 
-![image-20210402162251093](img\image-20210402162251093.png)
+![image-20210402162251093](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402162251093.png)
 
 ##### IV 启动
 
 启动非常简单，进入bin目录，结构如下：
 
-![image-20210402162350977](img\image-20210402162350977.png)
+![image-20210402162350977](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402162350977.png)
 
 然后执行命令即可：
 
@@ -2974,17 +2974,17 @@ Nacos的默认端口是8848，如果你电脑上的其它进程占用了8848端�
 
 执行后的效果如图：
 
-![image-20210402162526774](img\image-20210402162526774.png)
+![image-20210402162526774](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402162526774.png)
 
 ##### V 访问
 
 在浏览器输入地址：http://127.0.0.1:8848/nacos即可：
 
-![image-20210402162630427](img\image-20210402162630427.png)
+![image-20210402162630427](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402162630427.png)
 
 默认的账号和密码都是nacos，进入后：
 
-![image-20210402162709515](img\image-20210402162709515.png)
+![image-20210402162709515](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402162709515.png)
 
 #### 2. Linux安装
 
@@ -2996,7 +2996,7 @@ Nacos依赖于JDK运行，索引Linux上也需要安装JDK才行。
 
 上传jdk安装包：
 
-![image-20210402172334810](img\image-20210402172334810.png)
+![image-20210402172334810](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402172334810.png)
 
 上传到某个目录，例如：`/usr/local/`
 
@@ -3025,15 +3025,15 @@ source /etc/profile
 
 如图：
 
-![image-20210402161102887](img\image-20210402161102187.png)
+![image-20210402161102887](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402161102187.png)
 
 也可以直接使用课前资料中的tar.gz：
 
-![image-20210402161130261](img\image-20210402161131261.png)
+![image-20210402161130261](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402161131261.png)
 
 上传到Linux服务器的某个目录，例如`/usr/local/src`目录下：
 
-![image-20210402163715580](img\image-20210402163715580.png)
+![image-20210402163715580](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402163715580.png)
 
 ##### III 解压
 
@@ -3051,11 +3051,11 @@ rm -rf nacos-server-1.4.1.tar.gz
 
 目录中最终样式：
 
-![image-20210402163858429](img\image-20210402163858429.png)
+![image-20210402163858429](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402163858429.png)
 
 目录内部：
 
-![image-20210402164414827](img\image-20210402164414827.png)
+![image-20210402164414827](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20210402164414827.png)
 
 
 
@@ -3216,13 +3216,13 @@ public class MailService {
 
 ##### I 获取QQ邮箱的授权码
 
-![image-20230504205133423](img\image-20230504205133423.png)
+![image-20230504205133423](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230504205133423.png)
 
-![image-20230504205233252](img\image-20230504205233252.png)
+![image-20230504205233252](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230504205233252.png)
 
-![image-20230504210010290](img\image-20230504210010290.png)
+![image-20230504210010290](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230504210010290.png)
 
-![image-20230504210039970](img\image-20230504210039970.png)
+![image-20230504210039970](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230504210039970.png)
 
 ##### II 引入依赖
 
@@ -4003,11 +4003,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ​	所以数据库中 admin 的密码应该为明文
 
-![image-20230508220249319](img\image-20230508220249319.png)
+![image-20230508220249319](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230508220249319.png)
 
 #### 2. 引入之后，默认的登陆界面
 
-![image-20230508033246333](img\image-20230508033246333.png)
+![image-20230508033246333](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230508033246333.png)
 
 > 太麻烦了，选择自定义登录界面，放弃 SpringSecurity => 采用默认的系统配置
 
@@ -4348,11 +4348,11 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 
 原因就是这个注解：
 
-![image-20230330182655814](img\image-20230330182655814.png)
+![image-20230330182655814](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230330182655814.png)
 
 解决方法一：将@RunWith(SpringRunner.class)去掉即可，但这种方式会有局限，比如下方你要@Autowired一个类就会报错
 
-![image-20230330182819643](img\image-20230330182819643.png)
+![image-20230330182819643](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230330182819643.png)
 
 解决方法二：在SpringBootTest后面加上
 
@@ -4362,7 +4362,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 
 即可，原因是：websocket是需要依赖tomcat等容器的启动，所以在测试过程中我们要真正的启动一个tomcat作为容器
 
-![image-20230330183053785](img\image-20230330183053785.png)
+![image-20230330183053785](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230330183053785.png)
 
 ### 8）启用Nacos后，RestTemplate报错
 
@@ -4466,11 +4466,11 @@ java.lang.IllegalStateException: No instances available for data.stats.gov.cn
 
 解决方法：
 
-![image-20230402232231962](img\image-20230402232231962.png)
+![image-20230402232231962](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230402232231962.png)
 
 ### 9）前端npm install出现bug
 
-![image-20230418001615756](img\image-20230418001615756.png)
+![image-20230418001615756](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230418001615756.png)
 
 **解决办法：**
 
@@ -4545,4 +4545,4 @@ public class CorsConfig implements WebMvcConfigurer {
 
 > [(6条消息) 解决 redis 的 key 出现的 \xac\xed\x00\x05t\x00 乱码问题_林志鹏JAVA的博客-CSDN博客](https://blog.csdn.net/m4330187/article/details/108091447)
 
-![image-20230505161931496](img\image-20230505161931496.png)
+![image-20230505161931496](https://raw.githubusercontent.com/KingKingLin/carbon-emission-system/master/img/image-20230505161931496.png)
